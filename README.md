@@ -18,7 +18,7 @@ MoGERNN is composed by two key modules: 1. Mixture of Graph Experts (MoGE), whic
 ```sh
 conda env create --file environment.yml
 ```
-2. Download the dataset and put them into ./data/
+2. Download the dataset from [Google Cloud](https://drive.google.com/file/d/1VCPGVljJzdBTfhardAiOZNimxGDXiOiw/view?usp=sharing) and put them into ./data/
 3. Train or the model
 ```sh
 bash scripts/MoGERNN-train.sh
