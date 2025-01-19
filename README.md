@@ -33,7 +33,7 @@ scripts/MoGERNN-test_for_new_env.sh
 bash scripts/MoGERNN-inference.sh
 ```
 ## Main Resultes
-![](images/map-results-mogernn.png)
+![](images/MoGERNN.png)
 Map presentation of prediction results
 
 ## Acknowledgement
