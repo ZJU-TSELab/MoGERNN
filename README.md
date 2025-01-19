@@ -11,7 +11,7 @@ To address these challenges, we introduce MoGERNN, a novel inductive spatio-temp
 
 ## Overall Architecture
 MoGERNN is composed by two key modules: 1. Mixture of Graph Experts (MoGE), which is aiming for unobserved node embedding 2. Spatio-temporal Graph Encoder-Decoder (STGED), which is aiming for future state prediction for both observed nodes and unobserveds.
-![MoGERNN](images/moge-architecture.png)
+![MoGERNN](images/MoGERNN.png)
 
 ## Usage
 1. Install the environment
@@ -33,7 +33,7 @@ scripts/MoGERNN-test_for_new_env.sh
 bash scripts/MoGERNN-inference.sh
 ```
 ## Main Resultes
-![](images/MoGERNN.png)
+![](images/map-results-mogernn.png)
 Map presentation of prediction results
 
 ## Acknowledgement
