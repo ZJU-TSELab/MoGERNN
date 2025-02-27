@@ -1,5 +1,5 @@
 # MoGERNN
-The repo is the official implementation for the paper: MoGERNN: An Inductive Traffic Predictor for Unobserved Locations.
+The repo is the official implementation for the paper: [MoGERNN: An Inductive Traffic Predictor for Unobserved Locations](https://arxiv.org/abs/2501.12281).
 
 ## Introduction
 
@@ -35,6 +35,8 @@ bash scripts/MoGERNN-inference.sh
 ## Main Resultes
 ![](images/map-results-mogernn.png)
 Map presentation of prediction results
+![](images/ModelAnalysis.png)
+Visualization of graph expert contributions across multiple scenarios
 
 ## Acknowledgement
 We appreciate the following GitHub repo a lot for their valuable code and efforts.
