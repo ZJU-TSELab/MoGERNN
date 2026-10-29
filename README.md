@@ -38,6 +38,16 @@ Map presentation of prediction results
 ![](images/ModelAnalysis.png)
 Visualization of graph expert contributions across multiple scenarios
 
+## Additional Experimental Details
+
+1. The retrained counterpart
+
+For the retrained counterpart, we adopted a simplified offline setting in which historical observations from the original training period were assumed to be available for the sensors treated as newly added in the experiment. We included these observations in retraining, alongside those from the existing sensors, and evaluated the model on the original test period. This provided an offline retraining reference for the expanded sensor set while retaining the original temporal training–test split. The assumed availability of historical observations should be distinguished from a deployment in which measurements only become available after a sensor is physically installed.
+
+2. The inference-time experiment
+
+The inference-time experiment was intended to assess the computational benefit of executing only the experts selected by sparse gating. For this experiment, we modified the execution procedure to first compute the gating weights and then skip the computation of experts assigned zero weight. The public release retains the original implementation used for the main predictive-performance experiments, which computes all expert outputs before weighted aggregation, including those assigned zero weight. The timing-specific execution procedure was not included in that release; consequently, the released code alone does not reproduce the timing results.
+
 ## Citation
 If you find this repo helpful, please cite our paper.
 
